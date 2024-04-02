@@ -1,3 +1,24 @@
+header > nav {
+  width: 100%;
+  padding: 16px;
+  background-color: black;
+  color: white;
+  animation-name: changeMenu;
+}
+
+ul > li:hover {
+  cursor: pointer;
+  background-color: red;
+  animation-name: changeMenu;
+}
+
+.nav {
+ display: flex;
+ justify-content: space-around;
+ list-style: none;
+ flex-direction: row;
+}
+
 .container-image {
   width: 500px;
   height: 500px;
@@ -16,6 +37,12 @@
 }
 
 /* definir la animación */
+
+@keyframes changeMenu {
+  from {background-color: black;}
+  to {background-color: red;}
+}
+
 @keyframes changecolorbackground {
   from {background-color: red;}
   to {background-color: yellow;}
